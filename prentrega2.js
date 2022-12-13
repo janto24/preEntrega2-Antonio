@@ -156,11 +156,11 @@ let busquedaEquipo = prompt("Ingrese un equipo")
 
 let resultadoBusueda = copiaBufandas.filter(elemento => elemento.producto === (primeraLetraMayuscula(busquedaEquipo)))
 
-let consultaDispley = window.confirm("Quieren ver sólo los productos con descuentos del 5%?")
+let consultaDisplay = window.confirm("Quieren ver sólo los productos con descuentos del 5%?")
 stock(copiaBufandas)
 
 // ejecuciones en consola
-if (consultaDispley === true)  {
+if (consultaDisplay === true)  {
   console.log("Los siguientes productos tienen un descuento del 5%:")
   console.table(soloDesc(productosOrdenados))
 } else {
