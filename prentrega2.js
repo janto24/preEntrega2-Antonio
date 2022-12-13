@@ -156,7 +156,7 @@ let busquedaEquipo = prompt("Ingrese un equipo")
 
 let resultadoBusueda = copiaBufandas.filter(elemento => elemento.producto === (primeraLetraMayuscula(busquedaEquipo)))
 
-let consultaDisplay = window.confirm("Quieren ver sólo los productos con descuentos del 5%?")
+let consultaDisplay = window.confirm("Desea ver sólo los productos con descuentos del 5%?")
 stock(copiaBufandas)
 
 // ejecuciones en consola
